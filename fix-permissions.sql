@@ -1,0 +1,7 @@
+-- drop user 'vagrant'@'192.168.33.1';
+-- FLUSH PRIVILEGES;
+CREATE USER 'vagrant'@'192.168.33.1' IDENTIFIED BY 'vagrant';
+GRANT ALL PRIVILEGES ON *.* TO 'vagrant'@'192.168.33.1';
+FLUSH PRIVILEGES;
+
+CREATE SCHEMA `vagrant` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
